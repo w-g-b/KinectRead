@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MyGestureListener : MonoBehaviour, KinectGestures.GestureListenerInterface
+public class BookGestureListener : MonoBehaviour, KinectGestures.GestureListenerInterface
 {
     [Tooltip("GUI-Text to display gesture-listener messages and gesture information.")]
     public Text gestureInfo;
 
     // singleton instance of the class
-    private static MyGestureListener instance = null;
+    private static BookGestureListener instance = null;
 
     // internal variables to track if progress message has been displayed
     private bool progressDisplayed;
@@ -26,7 +26,7 @@ public class MyGestureListener : MonoBehaviour, KinectGestures.GestureListenerIn
     /// Gets the singleton CubeGestureListener instance.
     /// </summary>
     /// <value>The CubeGestureListener instance.</value>
-    public static MyGestureListener Instance
+    public static BookGestureListener Instance
     {
         get { return instance; }
     }

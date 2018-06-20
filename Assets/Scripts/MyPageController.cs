@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MyPageController : MonoBehaviour
 {
-    private MyGestureListener gestureListener;
+    private BookGestureListener gestureListener;
     public AutoFlip autoFlip;
 
     private void Start()
@@ -13,7 +13,7 @@ public class MyPageController : MonoBehaviour
         Cursor.visible = false;
 
         // get the gestures listener
-        gestureListener = MyGestureListener.Instance;
+        gestureListener = BookGestureListener.Instance;
     }
 
     private void Update()
